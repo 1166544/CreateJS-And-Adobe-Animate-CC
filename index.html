@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <meta charset="utf8">
+
+      <title>Require管理多JS</title>
+
+      <!-- data-main属性就是设置js执行的入口的，它被设置为了一个相对路径，是js目录下的main.js。 -->
+      <script src="js/libs/require.js" data-main="js/main"></script>
+
+  </head>
+  <body>
+
+    <article id="article">
+        <h5>基本原理:</h5>
+        RequireJS使用head.appendChild()将每一个依赖加载为一个script标签。
+        RequireJS会等待所有的依赖加载完毕，计算出模块定义函数正确调用顺序，然后依次调用它们。
+    </article>
+
+  </body>
+</html>
