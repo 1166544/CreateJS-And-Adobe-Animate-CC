@@ -1,43 +1,39 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+### Example user template template
+### Example user template
 
-# Folder config file
-Desktop.ini
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+# Created by .ignore support plugin (hsz.mobi)
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+/node_modules
+coverage/
+*.log
+npm-debug.log
+npm-debug.log.*
+.logs/
+logs/
+/sea-modules/
+*.swp
+run/
+*-run/
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+test/fixtures/antx/conf/
+*-tair.xml
+assembly
+process.dev.json
+test/**/proxy_class_map.js
+test/fixtures/proxy_tpl/**/proxy*
+test/fixtures/proxy_tpl/**/.gitignore
+test/**/node_hsf_config_snapshots/
+/app/public/
+/app/view
+/app/undefined
+_site
+~
+.tmp/
+*.tmp
+*.lock
+.history
