@@ -9,10 +9,10 @@ engine---          H5交互逻辑
   |---entrance     主交互入口
   |---event        横竖屏切换处理
   |---music        音乐管理器
-  |---share
-  |---swipe
-  |---touch
-  |---view
+  |---share        微信分享管理器
+  |---swipe        滑动事件管理器
+  |---touch        点击事件管理器
+  |---view         主场景显示对像基类
 images     ---资源图片目录
 sounds     ---资源声音目录
 index.html --入口文件
