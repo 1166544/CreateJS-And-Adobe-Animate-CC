@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>什么鬼！这也要收钱！</title>									
+    <script src="./engine/core/createjs-2015.11.26.min.js?v=placeholder"></script>
+    <script src="./engine/core/soundjs-0.6.2.min.js?v=placeholder"></script>
+    <style>
+        body {
+            overflow:hidden;
+        }
+        #_preload_div_{
+            position:absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        #animation_container, #_preload_div_ .mask {
+            position:absolute;
+            margin:auto;
+            display: inline-block; 
+            height:150px; 
+            width: 120px; 
+            vertical-align:middle;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        #_preload_div_ .img{
+            vertical-align: middle; 
+            max-height: 100%
+        }
+    
+        #_preload_div_ .img img{
+            animation: rotates 2s linear infinite;
+            -webkit-animation: rotates 2s linear infinite;
+        }
+    
+        #_preload_div_ span{
+            display: inline-block; 
+            margin-top: -5px;
+            vertical-align: middle;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        #LXB_CONTAINER_SHOW {
+            display: none !important;
+        }
+
+        @keyframes rotates {
+            0%{
+                transform: rotate(0);
+                -webkit-transform: rotate(0);
+            }
+    
+            100%{
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body onload="coreEngine.init();" style="margin: 0px;background-color: #000000;overflow-x:hidden;overflow-y:hidden">
+   
+    <img src="./images/cover.jpg?v=placeholder" style="width:0; height:0">
+    <canvas id="mainView" width="750" height="1206"  style="position:absolute;"></canvas>
+    <div id='_preload_div_'>
+        <div class="mask">
+            <span class="img">
+                <img src='images/_preloader.png'/>
+            </span>
+            <span id="loaderLbl"></span>	
+        </div>
+    </div>
+
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=placeholder"></script>
+<script src="./configs/configs.js?v=placeholder"></script>
+<script src="./images/P0/montage-p0.js?v=placeholder"></script>
+<script src="./images/P1/montage-p1.js?v=placeholder"></script>
+<script src="./images/P2/montage-p2.js?v=placeholder"></script>
+<script src="./images/P3/montage-p3.js?v=placeholder"></script>
+<script src="./images/P4/montage-p4.js?v=placeholder"></script>
+<script src="./images/P5/montage-p5.js?v=placeholder"></script>
+<script src="./images/P6/montage-p6.js?v=placeholder"></script>
+<script src="./images/P7/montage-p7.js?v=placeholder"></script>
+<script src="./engine/view/view.js?v=placeholder"></script>
+<script src="./engine/events/events.js?v=placeholder"></script>
+<script src="./engine/music/music.js?v=placeholder"></script>
+<script src="./engine/entrance/entrance.js?v=placeholder"></script>
+<script src="./engine/touch/touch.js?v=placeholder"></script>
+<script src="./engine/share/share.js?v=placeholder"></script>
+<script src="./engine/swipe/swipe.js?v=placeholder"></script>
+<script src="index.js?v=placeholder"></script>
+
+</body>
+</html>
