@@ -99,4 +99,4 @@ http://localhost:7001/public/montage/index.html
 ```
 
 ## 预览
-![H5 Preview Gif 1](./app/public/montage/Animation.gif "H5 Preview Gif 1")
+![H5 Preview Gif 1](./gen/Animation.gif "H5 Preview Gif 1")
