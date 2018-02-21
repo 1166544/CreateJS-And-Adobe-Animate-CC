@@ -3,18 +3,29 @@
 
 ## 目录结构
 ```shell
-configs---         配置项
-engine---          H5交互逻辑
-  |---core         create.js引擎文件
-  |---entrance     主交互入口
-  |---event        横竖屏切换处理
-  |---music        音乐管理器
-  |---share        微信分享管理器
-  |---swipe        滑动事件管理器
-  |---touch        点击事件管理器
-  |---view         主场景显示对像基类
-images     ---资源图片目录
-sounds     ---资源声音目录
+configs ---         配置项
+engine ---          H5交互逻辑
+  |---core          create.js引擎文件
+  |---entrance      主交互入口
+  |---event         横竖屏切换处理
+  |---music         音乐管理器
+  |---share         微信分享管理器
+  |---swipe         滑动事件管理器
+  |---touch         点击事件管理器
+  |---view          主场景显示对像基类
+images---           资源图片目录
+  |---p0                         场景0动画
+  |---p1                         场景1动画
+  |---p2                         场景2动画
+  |---p3                         场景3动画
+  |---p4                         场景4动画
+  |---p5                         场景5动画
+  |---p6                         场景6动画
+  |---p7                         场景7动画
+  |---_preloader.png             加载中提示图片
+  |---cover.jpg                  微信分享封面
+
+sounds ---资源声音目录
 index.html --入口文件
 index.js   --入口JS
 ```
