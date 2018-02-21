@@ -1,6 +1,14 @@
 # Create.js 与 Adobe Animate CC H5互动交互项目
 
 
+## 说明
+```js
+1.支持多场景动态加载
+2.支持场景动画通过Adobe Animate CC生成,适用于个性化动画展示
+3.支持微信分享(前端部份)
+4.支持手势交互，向上滑加载下一场景，向下滑动加载上一场景
+```
+
 ## 目录结构
 ```shell
 configs ---         配置项
@@ -30,6 +38,26 @@ index.html --入口文件
 index.js   --入口JS
 ```
 *请注意源文件在app/public/montage目录,此目录为EGG SERVER端静态资源目录，不同框架请依据该框架静态资源目录设置*
+
+## P0-P7 需要在每次FLA发布之后依据服务器更改服务器静资源路径，例如:
+```js
+// p0/montage-po.js
+lib.properties = {
+	...
+	manifest: [{src: 'images/montage_p0_atlas_.png', id: 'montage_p0_atlas_'}],
+	...
+};
+
+// 更改成:
+// p0/montage-p0.js
+lib.properties = {
+	...
+	manifest: [{src: window.configs.perfixUrl + '0/images/montage_p0_atlas_.png', id: 'montage_p0_atlas_'}],
+	...
+};
+
+// 0代表第N个动画
+```
 
 
 ## 通讯方式
