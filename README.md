@@ -3,15 +3,22 @@
 
 ## 目录结构
 ```shell
-1.安装cnpm,避免有些包国内下不下来
-https://npm.taobao.org/
-
-2.安装依赖
-cnpm install
-请注意如果是使用Webstorm，Idea之类的IDE，请设置node_modules目录为Excluded
-避免遍历该目录过久，IDE界面无反应状态。
+configs---         配置项
+engine---          H5交互逻辑
+  |---core         create.js引擎文件
+  |---entrance     主交互入口
+  |---event        横竖屏切换处理
+  |---music        音乐管理器
+  |---share
+  |---swipe
+  |---touch
+  |---view
+images     ---资源图片目录
+sounds     ---资源声音目录
+index.html --入口文件
+index.js   --入口JS
 ```
-*建议使用Visual Studio Code > V1.10版本*
+*请注意源文件在app/public/montage目录,此目录为EGG SERVER端静态资源目录，不同框架请依据该框架静态资源目录设置*
 
 
 ## 通讯方式
@@ -53,4 +60,4 @@ http://localhost:7001/public/montage/index.html
 ```
 
 ## 预览
-<img src='./Animation.gif'>
+<img src='app/public/montage/Animation.gif'>
